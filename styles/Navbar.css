@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap");
+
+.navbar a{
+    font-size: 18px;
+    font-weight:100;
+    color:#ededed;
+    font-weight: 500;
+    margin-left: 35px;
+    transition:.3s;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color:#00aff0;
+}
