@@ -1,9 +1,11 @@
 import React from 'react'
+import '/styles/globals.css'
+
 import '/styles/AppHomeContent.css'
 const AppHomeSection = () => {
   return (
     <section className="home">
-        <div className="home-content">
+        <div className="container1">
             <h1>Hi, I'm Vinay Kumar Yadav</h1>
             <h3>Deep Learning Engineer</h3>
             <p>

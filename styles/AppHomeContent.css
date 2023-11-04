@@ -8,47 +8,7 @@
     padding: 0 10%;
 }
 
-.home-content{
-    width:700px;
-}
 
-.home-content h1{
-    position:relative;
-    line-height: 1.2;
-    font-size: 56px;
-    font-weight: 700;
-}
-
-
-.home-content h1::before{
-    content:'';
-    position: absolute;
-    top:0;
-    right:0;
-    width:100%;
-    height:100%;
-    background:#030B1A;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
-}
-
-.home-content h3{
-    font-size:32px;
-    font-weight: 700;
-    color: #00aff0;
-}
-
-.home-content p{
-    font-size:16px;
-    margin:20px 0 40px;
-}
-
-.home-content .btn-box{
-    display: flex;
-    justify-content: space-between;
-    width:345px;
-    height:50px;
-}
 
 .btn-box a{
     position:relative;
@@ -61,7 +21,7 @@
     border:2px solid #00aff0;
     border-radius:8px;
     font-size:19px;
-    color: #030B1A;
+    color: #030c15;
     text-decoration:none;
     font-weight:600;
     letter-spacing: 1px;
@@ -80,7 +40,7 @@
 
 
 .btn-box a:nth-child(2):hover{
-    color:#030B1A;
+    color:#030c15;
 }
 
 .btn-box a:nth-child(2)::before{
@@ -94,7 +54,7 @@
     left:0;
     width:0%;
     height:100%;
-    background:#030B1A;
+    background:#030c15;
     z-index:-1;
     transition:.5s;
 }
@@ -145,7 +105,7 @@
 }
 
 .home-sci a:hover{
-    color:#030B1A;
+    color:#030c15;
 }
 
 .home-sci a:hover::before{
@@ -157,7 +117,7 @@
     bottom:0;
     right:0px;
     width:765px;
-    height:89%;
+    height:90.5%;
     background:transparent;
     transition:1s;
 }
@@ -165,6 +125,7 @@
 .home-imgHover:hover{
     background:#030c15;
 }
+
 
 .resume{
     display:flex;
@@ -176,6 +137,7 @@
     overflow:none;
 }
 .resume a{
+    position:relative;
     width:250px;
     height:50px;
     font-size: 20px;
@@ -189,26 +151,28 @@
     text-decoration: none;
     font-weight:600;
     letter-spacing: 1px;
+    overflow:hidden;
+    z-index: 1;
 }
 
 .resume a::before{
     content:'';
     position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:0%;
     background:#00aff0;
-    width:0%;
-    height:100%;
-    top:0;
-    left:0;
-    border-radius: 50%;
     z-index: -1;
-    transition: .10s;
+    transition: 1.0s;
 
 }
 
 .resume a:hover{
-    color:#b2c7c1;
+    color:#c5ded7;
+    
 }
 
 .resume a:hover::before{
-    width:100%;
+    height:100%;
 }

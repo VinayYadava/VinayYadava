@@ -1,6 +1,11 @@
 import '/styles/globals.css'
 import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import React, { useState } from "react";
+
+import PageHeader from '../components/Header/PageHeader'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +24,10 @@ export default function RootLayout({
       <head>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <PageHeader />
+        {children}
+      </body>
     </html>
   )
 }
