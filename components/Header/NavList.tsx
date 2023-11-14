@@ -1,17 +1,17 @@
 import React from "react";
 import '/styles/Navbar.css';
-
+import Link from 'next/link';
 const NavList = () => {
   const activeLink="home"
 
   return (
 
     <nav className="navbar">
-      <a href="#" className="active">Home</a>
-      <a href="/About">About</a>
-      <a href="#">Service</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
+      <Link href="/" className="active">Home</Link>
+      <Link href="/About">About</Link>
+      <Link href="#">Service</Link>
+      <Link href="#">Portfolio</Link>
+      <Link href="#">Contact</Link>
     </nav>
 
   );
