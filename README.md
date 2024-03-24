@@ -32,7 +32,7 @@ Hello, I'm Vinay Kumar Yadav, and I'm passionate about exploring the realms of A
 
 - **B.Tech (CSE) with Data Science Specialization**
   - Noida Institute of Engineering & Technology, 2020 - Present
-  - 5th semester CGPA: 7.92/10
+  - 7th semester CGPA: 8.04/10
 - **Intermediate (Class XII)**
   - Modern School Noida, CBSE, 2018
   - Percentage: 85.2%
