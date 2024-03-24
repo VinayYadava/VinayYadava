@@ -1,5 +1,6 @@
 
 .header{
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -7,17 +8,22 @@
     padding:20px 10%;
     background: transparent;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     z-index:100;
 }
-
+.logo-div{
+    padding:5px;
+    align-items: center;
+    
+}
 .logo {
     position:relative;
     font-size :25px;
     color: #ededed;
     text-decoration:none;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .logo::before{
@@ -31,9 +37,46 @@
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
+.toggle-button{
+    display: None;
+    float:right;
+    overflow: auto;
+    background-color: rgb(59, 49, 35);
+}
+
+.hidden{
+    display:none;
+}
+.hidden .navlist {
+    display: none;
+  }
+  
 
 @keyframes showRight{
     100% {
         width: 0;
+    }
+}
+
+@media screen and (max-width:873px){
+    .logo-div{
+        width:100%;
+        background-color: #030c15;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header{
+        display: block;
+        overflow:hidden;
+    }
+    .navlist{
+        float: bottom;
+        background-color: #030c15;
+        display:none;
+    }
+    .toggle-button{
+        display: block;
+        float:right;
     }
 }

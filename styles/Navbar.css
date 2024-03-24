@@ -1,16 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap");
 
+.navbar{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width:500px;
+}
 .navbar a{
     font-size: 18px;
-    font-weight:100;
+    font-weight:180px;
+    padding: 5px;
     color:#ededed;
-    font-weight: 500;
-    margin-left: 35px;
     transition:.3s;
     text-decoration: none;
+    overflow:hidden;
 }
 
 .navbar a:hover,
 .navbar .active{
     color:#00aff0;
+}
+
+@media screen and (max-width:873px) {
+    .navbar{
+        display:block;
+        flex-direction: row;
+        align-items: center;
+        min-width: auto;
+        width:100%;
+        justify-content: space-between;
+        background-color: transparent;
+        overflow: hidden;
+        background-color: #030c15;
+        color: inherit;
+        opacity: .999;
+        padding-left: 10px;
+    }
 }

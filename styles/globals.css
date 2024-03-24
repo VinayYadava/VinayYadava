@@ -8,44 +8,21 @@ body {
   background:#030c15;
 }
 
-.container1{
-  width:700px;
+h1{
+  font-size: 40px;
+  font-weight: 800;
+  font-family:cursive;
+  font-style:solid bold;
 }
+h3{
+  font-size: 30px;
+  font-weight: 600;
 
-.container1 h1{
-  position:relative;
-  line-height: 1.2;
-  font-size: 56px;
-  font-weight: 700;
+  font-family:cursive;
+  font-style:bold;
 }
-
-
-.container1 h1::before{
-  content:'';
-  position: absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:100%;
-  background:#030c15;
-  animation: showRight 1s ease forwards;
-  animation-delay: .4s;
-}
-
-.container1 h3{
-  font-size:32px;
-  font-weight: 700;
-  color: #00aff0;
-}
-
-.container1 p{
-  font-size:16px;
-  margin:20px 0 40px;
-}
-
-.container1 .btn-box{
-  display: flex;
-  justify-content: space-between;
-  width:345px;
-  height:50px;
+p{
+  font-size: 16px;
+  word-spacing: 1px;
+  letter-spacing: 2px;
 }

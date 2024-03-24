@@ -1,20 +1,34 @@
-import React from "react";
-import '/styles/Navbar.css';
-import Link from 'next/link';
+import React, { useState } from "react";
+import "/styles/Navbar.css";
+import Link from "next/link";
+
 const NavList = () => {
-  const activeLink="home"
+  const activeLink = "home";
 
   return (
-
-    <nav className="navbar">
-      <Link href="/" className="active">Home</Link>
-      <Link href="/About">About</Link>
-      <Link href="#">Service</Link>
-      <Link href="#">Portfolio</Link>
-      <Link href="#">Contact</Link>
-    </nav>
-
+    <div className="nav-con">
+      <nav className="navbar">
+        <div>
+          <Link href="/" className="active">
+            Home
+          </Link>
+        </div>
+        <div>
+          <Link href="/About">About</Link>
+        </div>
+        <div>
+          <Link href="#">Service</Link>
+        </div>
+        <div>
+          <Link href="#">Portfolio</Link>
+        </div>
+        <div>
+          <Link href="#">Contact</Link>
+        </div>
+      </nav>
+      
+    </div>
   );
-}
+};
 
 export default NavList;

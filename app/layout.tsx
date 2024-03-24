@@ -3,7 +3,6 @@ import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import React, { useState } from "react";
 
-import PageHeader from '../components/Header/PageHeader'
 
 
 
@@ -25,7 +24,7 @@ export default function RootLayout({
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
       </head>
       <body className={inter.className}>
-        <PageHeader />
+        
         {children}
       </body>
     </html>
