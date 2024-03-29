@@ -33,6 +33,9 @@
         background-color: transparent;
         overflow: hidden;
         background-color: #030c15;
+        border: 3px solid #00aff0;
+        border-radius: 15px;
+        padding: 7px;
         color: inherit;
         opacity: .999;
         padding-left: 10px;

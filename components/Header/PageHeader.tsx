@@ -13,12 +13,11 @@ const PageHeader = () => {
 
   const toggleVisibility: ()=>void = () => {
     setHidden(!isHidden);
-    console.log(isHidden);
   };
   return (
     <header className='header' >
         <div className="logo-div">
-          <a href="" className="logo">VinayYadava.</a>
+          <a href="/" className="logo">VinayYadava.</a>
           <button className="toggle-button" onClick={toggleVisibility} name='bars'>
           <FontAwesomeIcon className="bar" icon={faBarsStaggered} size='2x'/>
           </button>

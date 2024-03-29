@@ -1,29 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import "/styles/Navbar.css";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 
 const NavList = () => {
+  
+  const pathname = usePathname();
+  console.log({"pathname":pathname})
   const activeLink = "home";
-
   return (
     <div className="nav-con">
       <nav className="navbar">
         <div>
-          <Link href="/" className="active">
+          <Link href="/" className={pathname==='/'?"active":""}>
             Home
           </Link>
         </div>
         <div>
-          <Link href="/About">About</Link>
+          <Link href="/About" className={pathname==='/About'?"active":""}>About</Link>
         </div>
         <div>
-          <Link href="#">Service</Link>
+          <Link href="#" className={pathname==='/Service'?"active":""}>Service</Link>
         </div>
         <div>
-          <Link href="#">Portfolio</Link>
+          <Link href="#" className={pathname==='/Portfolio'?"active":""}>Portfolio</Link>
         </div>
         <div>
-          <Link href="#">Contact</Link>
+          <Link href="#" className={pathname==='/Contact'?"active":""}>Contact</Link>
         </div>
       </nav>
       

@@ -1,15 +1,13 @@
 .home{
     background-size:cover;
     background-position:center;
-    padding:5px;
+    padding: 50px;
     background:#030c15;
 
     
 }
 
-.header-margin{
-  height:5vh;
-}
+
 .main{
   min-height: 100vh;
 }
@@ -23,7 +21,7 @@
     float:left;
     width: 65%;
     min-height:100vh;
-    padding-left: 55px;
+    padding-left: 45px;
     padding-right: 45px;
 }
 
@@ -59,13 +57,13 @@
 
 .main2{
   float:right;
-  padding-top:6.5vh;
-  padding-left: 20px;
   width: 35%;
+  padding-top:10px;
 }
 .main2-img{
   width:100%;
   height:100%;
+  
 }
 
 .home-sci{
@@ -196,7 +194,7 @@
 .resume{
     display:flex;
     bottom: 100px;
-    max-width:50vh;
+    max-width:400px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -248,11 +246,17 @@
 
 
 .tech-stack{
-    
-    background-color: #094f68;
-    display:none;
+    padding: 30px;
+    max-width: 100%;
+    height:20px;
+    justify-content:center;
+    vertical-align: middle;
+    display:flex;
     justify-content: center;
     align-items: center;
+}
+.tech-stack p {
+  font-size: small;
 }
 
 .container1{
@@ -269,7 +273,7 @@
     position:relative;
     line-height: 0.8;
     font-size: 80px;
-    font-style: solid;;
+    font-style: solid;
     font-weight: 700;
     height: 10%;
     background-color: red;
@@ -292,10 +296,19 @@
       font-size: 80px;
       background-color: lightblue;
     }
+    p{
+      font-size: 12px;
+    }
   }
 
 
 @media screen and (max-width: 569px) {
+  .home{
+    padding:0px;
+  }
+  p{
+    font-size: 12px;
+  }
     .main1{
 
         width:100%;
@@ -306,19 +319,21 @@
     }
     
     .main2{
+        padding-left: 0px;
+
         width:100%;
-        padding: 10px;
+        float: center;
 
     }
     .main2-img{
         width:200px;
-        height:200px
-    }
-    .h1{
-      font-size: 2ch;
+        height:200px;
     }
     .resume a{
       font-size: 2ch;
+    }
+    .tech-stack p {
+      font-size: 6px;
     }
 }
 
@@ -330,7 +345,12 @@
     padding:30px;
     max-width: 400px;
   }
-  
+  .home{
+    padding:0px;
+  }
+  p{
+    font-size: 12px;
+  }
   .btn-box a{
     position:relative;
     padding:7px;
@@ -390,9 +410,17 @@
     font-size: 2ch;
   }
 
-  .main1{
-    padding-left:15px;
-    padding-right:15px;
+  
+  .main2{
+    display: flex;
+    padding-left: 0px;
+
+    justify-content: center;
+    align-items: center;
+
+  }
+  .tech-stack p {
+    font-size: 7px;
   }
 }
 
@@ -401,13 +429,40 @@
     
     justify-content:space-around;
   }
+  .home{
+    padding:0px
+  }
   .btn-box a {
     min-width: 110px;
   }
+  .main2{
+    display: flex;
+    padding-left: 0px;
+
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .main2-img{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: aliceblue;
+  }
+  p{
+    font-size: 12px;
+  }
+  .tech-stack p {
+    font-size: 7px;
+  }
+
 }
 
 @media screen and (max-width:603){
   .resume a{
     font-size: 10px;
+  }
+  .home{
+    padding:0px;
   }
 }

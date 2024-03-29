@@ -2,12 +2,10 @@ import React from "react";
 import Image from "next/image";
 import "/styles/globals.css";
 import "/styles/AppHomeContent.css";
-import PageHeader from '../Header/PageHeader'
 
 const AppHomeSection = () => {
   return (
     <section className="home">
-      <div className="header-margin"><PageHeader /></div>
       <section className="main">
 
         <section className="main1">
@@ -51,11 +49,11 @@ const AppHomeSection = () => {
             alt="My Image"
 
           />
-          <span className="home-mgHover">
-          </span>
         </section>
       </section>
-      <section className="tech-stack">gfgh</section>
+      <section className="tech-stack">
+        <p>Copyright © 2024 WebsiteLast. All rights reserved. Unlocking the future one website at a time.</p>
+      </section>
     </section>
   );
 };
