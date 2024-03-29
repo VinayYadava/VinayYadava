@@ -23,6 +23,7 @@
     min-height:100vh;
     padding-left: 45px;
     padding-right: 45px;
+    padding-bottom: 0px;
 }
 
 .main1-content{
@@ -291,6 +292,7 @@
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
   }
+
   @media screen and (min-width: 1000x) {
     .container1 h1 {
       font-size: 80px;
@@ -310,6 +312,7 @@
     font-size: 12px;
   }
     .main1{
+        min-height:85vh;
 
         width:100%;
     }
