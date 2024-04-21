@@ -1,0 +1,20 @@
+.company-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.company{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    border: 3px solid #00aff0;
+    border-radius: 8px;
+    background-color: white;
+    height: 100%;
+}
+

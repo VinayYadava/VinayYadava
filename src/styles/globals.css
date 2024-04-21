@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  color: rgb(255,255,255);
+  background:#030c15;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 800;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:solid bold;
+}
+h3{
+  font-size: 30px;
+  font-weight: 600;
+
+  font-style:bold;
+}
+p{
+  font-size: 16px;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+}
+.header-margin{
+  height:5vh;
+}

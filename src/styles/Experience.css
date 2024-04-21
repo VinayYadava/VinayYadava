@@ -1,0 +1,7 @@
+.horizontal-line {
+    border: none;
+    height: 1px; /* Adjust the height to control the thickness of the line */
+    background-color: #333; /* Adjust the color to your preference */
+    margin: 20px 0; /* Adjust the margin as needed */
+  }
+  
